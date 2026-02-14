@@ -4,15 +4,25 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Redirecting…</title>
-    <meta http-equiv="refresh" content="0; url=https://talk.shapes.inc/community" />
+    <meta
+      http-equiv="refresh"
+      content="0; url=https://talk.shapes.inc/community?utm_source=shapesinc_redirect&utm_medium=website&utm_campaign=community_redirect"
+    />
     <script>
-      window.location.replace("https://talk.shapes.inc/community");
+      const targetUrl = new URL("https://talk.shapes.inc/community");
+      targetUrl.searchParams.set("utm_source", "shapesinc_redirect");
+      targetUrl.searchParams.set("utm_medium", "website");
+      targetUrl.searchParams.set("utm_campaign", "community_redirect");
+      window.location.replace(targetUrl.toString());
     </script>
   </head>
   <body>
     <p>
       Redirecting to
-      <a href="https://talk.shapes.inc/community">https://talk.shapes.inc/community</a>
+      <a
+        href="https://talk.shapes.inc/community?utm_source=shapesinc_redirect&utm_medium=website&utm_campaign=community_redirect"
+        >https://talk.shapes.inc/community?utm_source=shapesinc_redirect&utm_medium=website&utm_campaign=community_redirect</a
+      >
       ...
     </p>
   </body>
